@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'rdoc'
-gem 'rails', '~> 5.2.2'
+gem 'rails', '~> 5.2.3'
 gem 'will_paginate'
 gem 'inherited_resources'
 gem 'i18n'
@@ -30,19 +30,22 @@ gem 'therubyracer'
 
 gem 'web-console', group: :development
 
+gem 'ruby-progressbar'
+
 group :development, :test do
   gem 'mocha'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'rspec-html-matchers'
   gem 'rspec-collection_matchers'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '~> 3'
   gem 'factory_bot_rails'
   gem 'nokogiri'
   gem 'rails-controller-testing'
   gem 'listen'
   gem 'simplecov'
   gem 'simplecov-console'
+  gem 'rubocop', '~> 0.67.0'
   gem 'rubocop-rails_config'
   gem 'haml_lint', require: false
 end
